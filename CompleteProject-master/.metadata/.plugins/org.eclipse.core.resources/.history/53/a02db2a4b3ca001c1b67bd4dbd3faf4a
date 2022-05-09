@@ -1,0 +1,8 @@
+server.port=8084
+spring.application.name=search-service
+spring.data.mongodb.uri=mongodb+srv://Vinesh:Vinee@project.agp2f.mongodb.net/test
+
+spring.data.mongodb.database=FareDB
+
+## Swaggerdetails
+spring.mvc.pathmatch.matching-strategy=ant-path-matcher

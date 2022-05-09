@@ -1,0 +1,9 @@
+server.port=8096
+spring.application.name=Checkin-microservice
+
+spring.data.mongodb.uri=mongodb+srv://Vinesh:Vinee@project.agp2f.mongodb.net/test
+
+spring.data.mongodb.database=CheckinDB
+
+## Swaggerdetails
+spring.mvc.pathmatch.matching-strategy=ant-path-matcher

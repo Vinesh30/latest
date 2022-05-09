@@ -1,0 +1,24 @@
+1651474144961	Delete element
+1651474151595	Delete element
+1651474158092	Delete element
+1651474190922	Delete element
+1651474231260	Delete element
+1651474289947	Delete element
+1651477401787	Delete element
+1651505309723	Rename type 'UserDetails'
+1651506873836	Rename type 'ReceptionistSecurityConfiguration'
+1651506894344	Rename type 'ReceptionistSecurityController'
+1651545616481	Delete element
+1651545725559	Delete element
+1651545828906	Delete element
+1651545835386	Delete element
+1651548472355	Delete element
+1651554689785	Delete element
+1651560905734	Rename type 'AdminService'
+1651560923708	Rename type 'AdminServiceImpl'
+1651561242714	Rename field 'adminService'
+1651561640070	Rename type 'AdminSecurityConfiguration'
+1651561654450	Rename type 'AdminSecuirtyController'
+1651561974180	Rename type 'SearchController'
+1651564256180	Rename package 'caseStudy.UserMicroservice.SecurityConfig'
+1651564338972	Rename package 'caseStudy.searchMicroservice.SecurityConfig'

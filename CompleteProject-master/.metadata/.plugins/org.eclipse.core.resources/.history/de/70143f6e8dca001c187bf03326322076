@@ -1,0 +1,9 @@
+server.port=8091
+spring.application.name=AdminService
+eureka.client.register-with-eureka=true
+spring.data.mongodb.uri=mongodb+srv://Vinesh:Vinee@project.agp2f.mongodb.net/test
+spring.data.mongodb.database=AdminDB
+spring.main.allow-bean-definition-overriding=true
+
+## Swaggerdetails
+spring.mvc.pathmatch.matching-strategy=ant-path-matcher

@@ -1,0 +1,37 @@
+package caseStudy.searchMicroservices.entity;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document (collection = "userDetails")
+public class UserDetails {
+	
+	
+	@Id
+	private String userName;
+	private String passwaord;
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPasswaord() {
+		return passwaord;
+	}
+	public void setPasswaord(String passwaord) {
+		this.passwaord = passwaord;
+	}
+	public UserDetails(String userName, String passwaord) {
+		super();
+		this.userName = userName;
+		this.passwaord = passwaord;
+	}
+	public UserDetails() {
+		
+	}
+	
+	
+	
+
+}

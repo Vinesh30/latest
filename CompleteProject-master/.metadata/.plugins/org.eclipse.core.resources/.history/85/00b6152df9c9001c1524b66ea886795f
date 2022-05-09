@@ -1,0 +1,31 @@
+package caseStudy.UserMicroservice.SecurityConfig;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import caseStudy.UserMicroservice.dao.AdminRepository;
+
+@Service
+public class MyUserDetailsService implements UserDetailsService {
+
+	@Autowired
+	private AdminRepository repo;
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
+		ReceptionistSecurityModel secModel = repo.findById(username).get();
+		return new User(secModel.getUserId(), secModel.getPassword(), new ArrayList<>());
+	}
+
+	public void addUserdetails(ReceptionistSecurityModel mod) {
+		repo.insert(mod);
+	}
+
+
+}
