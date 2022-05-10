@@ -27,7 +27,7 @@ public class UserSecuirtyController {
 	@Autowired
 	private MyUserDetailsService userDetailsService;
 
-	// Authenticates the admin using user name and password and returns JWT
+	// Authenticates the user using user name and password and returns JWT
 	// token
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestParam String username, @RequestParam String password)
